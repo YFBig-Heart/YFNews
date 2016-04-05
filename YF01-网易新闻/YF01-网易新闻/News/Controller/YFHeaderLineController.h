@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  YFHeaderLineController.h
 //  YF01-网易新闻
 //
 //  Created by apple on 16/4/5.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface YFHeaderLineController : UIViewController
 
 @end
-
