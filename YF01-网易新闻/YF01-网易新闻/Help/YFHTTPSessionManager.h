@@ -22,7 +22,7 @@
  *  @param parasmeters     参数
  *  @param comletionHandle 完成回调
  */
-- (void)GET:(NSString *)path parameters:(id)parameters comletionHandle:(void (^)(id, NSError *))comletionHandle;
+- (void)GET:(NSString *)path parameters:(id)parameters comletionHandle:(void(^)(id responseObject, NSError *error))comletionHandle;
 /**
  *  自定义POST请求
  *
@@ -30,6 +30,6 @@
  *  @param parasmeters     参数
  *  @param comletionHandle 完成回调
  */
-- (void)POST:(NSString *)path parameters:(id)parameters comletionHandle:(void (^)(id, NSError *))comletionHandle;
+- (void)POST:(NSString *)path parameters:(id)parameters comletionHandle:(void(^)(id responseObject, NSError *error))comletionHandle;
 @end
 

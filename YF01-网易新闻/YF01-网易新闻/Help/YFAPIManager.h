@@ -21,5 +21,11 @@
  *  @param comletionHandle 完成回调
  */
 - (void)requestHeadLineWithComletionHandle:(void(^)(id responseObject, NSError *error))comletionHandle;
-
+/**
+ *  请求新闻数据
+ *
+ *  @param pata            频道的路径(URL)
+ *  @param comletionHandle 完成回调
+ */
+- (void)requestNewsDataWithPath:(NSString *)path comletionHandle:(void(^)(id responseObject, NSError *error))comletionHandle;
 @end

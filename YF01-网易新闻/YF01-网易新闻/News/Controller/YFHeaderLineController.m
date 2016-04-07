@@ -33,16 +33,20 @@ static NSString * const reuseIdentifier = @"Cell";
 // 加载模型数据
 - (void)loadHeadLineData {
     [YFHeaderLine headLineWithCompletion:^(NSArray *headLine) {
-        
-        NSMutableArray *array = [NSMutableArray arrayWithArray:headLine];
-        [array addObject:headLine.firstObject];
-        [array insertObject:headLine.lastObject atIndex:0];
-        
-        self.headLineData = array.copy;
+ 
+        self.headLineData = headLine;
         // 刷新collectionView
         [self.collectionView reloadData];
         // 设置总的
         self.pageContr.numberOfPages = headLine.count;
+        
+        // 设置第一页的标题
+        [self scrollViewDidEndDecelerating:self.collectionView];
+        NSIndexPath *indexPath = [NSIndexPath indexPathForItem:0 inSection:1];
+        
+         // 默认滚动第一页
+        [self.collectionView scrollToItemAtIndexPath:indexPath atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally animated:NO];
+        
     }];
     
 }
@@ -50,7 +54,7 @@ static NSString * const reuseIdentifier = @"Cell";
     [super viewDidAppear:animated];
     // 设置cell的item size
     self.flowLayout.itemSize = self.collectionView.bounds.size;
-//    NSLog(@"%@",NSStringFromCGRect(self.collectionView.bounds));
+
 }
 
 // 设置collectionView
@@ -73,6 +77,9 @@ static NSString * const reuseIdentifier = @"Cell";
 }
 
 #pragma mark 数据源和代理
+- (NSInteger) numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
+    return 3;
+}
 - (NSInteger) collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     return self.headLineData.count;
     
@@ -94,17 +101,28 @@ static NSString * const reuseIdentifier = @"Cell";
     // collectionView 的宽度
     CGFloat width = scrollView.bounds.size.width;
     
-    // 计算当前滚动到第几页
     NSInteger index = offsetX / width;
-    if (index == 0) {
-        NSIndexPath *indexPath = [NSIndexPath indexPathForItem:4 inSection:0];
+    // 第几组
+    NSInteger section = index / self.headLineData.count;
+    // 第组的第几页
+    NSInteger sectionIndex = index % self.headLineData.count;
+    
+    // 取出模型数据
+    YFHeaderLine *headline = self.headLineData[sectionIndex];
+
+    if ( section != 1) {
+        NSIndexPath *indexPath = [NSIndexPath indexPathForItem:sectionIndex inSection:1];
         
         [self.collectionView scrollToItemAtIndexPath:indexPath atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally animated:NO];
-    }else if (index == 5) {
-        NSIndexPath *indexPath = [NSIndexPath indexPathForItem:1 inSection:0];
-        [self.collectionView scrollToItemAtIndexPath:indexPath atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally animated:NO];  
     }
+    
+    // 设置当前的滚动的页码
+    self.pageContr.currentPage = sectionIndex;
+    // 设置标题
+    self.titleLabel.text = headline.title;
     
 }
 
 @end
+
+

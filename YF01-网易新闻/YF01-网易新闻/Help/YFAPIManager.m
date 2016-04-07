@@ -34,5 +34,12 @@
     [manager GET:@"ad/headline/0-4.html" parameters:nil comletionHandle:comletionHandle];
     
 }
+#pragma mark - 请求新闻数据
+- (void)requestNewsDataWithPath:(NSString *)path comletionHandle:(void(^)(id responseObject, NSError *error))comletionHandle {
+
+    [[YFHTTPSessionManager shareSessionManager] GET:path parameters:nil comletionHandle:comletionHandle];
+    
+    
+}
 
 @end

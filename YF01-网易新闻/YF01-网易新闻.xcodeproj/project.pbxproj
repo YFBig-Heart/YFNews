@@ -15,6 +15,18 @@
 		185C2FC41CB3E18B00D57825 /* NSObject+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 185C2FC31CB3E18B00D57825 /* NSObject+Log.m */; };
 		185C2FC81CB3E1DA00D57825 /* UIView+YFExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 185C2FC71CB3E1DA00D57825 /* UIView+YFExt.m */; };
 		185C2FCB1CB3E66D00D57825 /* YFAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 185C2FCA1CB3E66D00D57825 /* YFAPIManager.m */; };
+		185C2FCE1CB40A3C00D57825 /* YFNewsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185C2FCD1CB40A3C00D57825 /* YFNewsController.m */; };
+		185C2FD11CB40A4E00D57825 /* YFNewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 185C2FD01CB40A4E00D57825 /* YFNewsCell.m */; };
+		185C2FD41CB40A9300D57825 /* YFNews.m in Sources */ = {isa = PBXBuildFile; fileRef = 185C2FD31CB40A9300D57825 /* YFNews.m */; };
+		185C2FD71CB4EE4D00D57825 /* YFNewsImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 185C2FD61CB4EE4D00D57825 /* YFNewsImage.m */; };
+		185C2FD91CB5366200D57825 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185C2FD81CB5366200D57825 /* Home.storyboard */; };
+		185C2FDD1CB536C800D57825 /* YFHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185C2FDC1CB536C800D57825 /* YFHomeController.m */; };
+		185C2FDF1CB5395500D57825 /* topic_news.json in Resources */ = {isa = PBXBuildFile; fileRef = 185C2FDE1CB5395500D57825 /* topic_news.json */; };
+		185C2FE21CB5398900D57825 /* YFChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 185C2FE11CB5398900D57825 /* YFChannel.m */; };
+		185C2FE51CB5410600D57825 /* YFChannelLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 185C2FE41CB5410600D57825 /* YFChannelLabel.m */; };
+		185C2FE81CB547E100D57825 /* YFChannelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 185C2FE71CB547E100D57825 /* YFChannelCell.m */; };
+		185C2FEC1CB6184100D57825 /* YFDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185C2FEB1CB6184100D57825 /* YFDetailController.m */; };
+		185C2FEE1CB62BE000D57825 /* detail.html in Resources */ = {isa = PBXBuildFile; fileRef = 185C2FED1CB62BE000D57825 /* detail.html */; };
 		18DA07E61CB38CF20056528E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DA07E51CB38CF20056528E /* main.m */; };
 		18DA07E91CB38CF20056528E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DA07E81CB38CF20056528E /* AppDelegate.m */; };
 		18DA07F11CB38CF20056528E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18DA07F01CB38CF20056528E /* Assets.xcassets */; };
@@ -39,6 +51,27 @@
 		185C2FC71CB3E1DA00D57825 /* UIView+YFExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YFExt.m"; sourceTree = "<group>"; };
 		185C2FC91CB3E66D00D57825 /* YFAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFAPIManager.h; sourceTree = "<group>"; };
 		185C2FCA1CB3E66D00D57825 /* YFAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFAPIManager.m; sourceTree = "<group>"; };
+		185C2FCC1CB40A3C00D57825 /* YFNewsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFNewsController.h; sourceTree = "<group>"; };
+		185C2FCD1CB40A3C00D57825 /* YFNewsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFNewsController.m; sourceTree = "<group>"; };
+		185C2FCF1CB40A4E00D57825 /* YFNewsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFNewsCell.h; sourceTree = "<group>"; };
+		185C2FD01CB40A4E00D57825 /* YFNewsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFNewsCell.m; sourceTree = "<group>"; };
+		185C2FD21CB40A9300D57825 /* YFNews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFNews.h; sourceTree = "<group>"; };
+		185C2FD31CB40A9300D57825 /* YFNews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFNews.m; sourceTree = "<group>"; };
+		185C2FD51CB4EE4D00D57825 /* YFNewsImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFNewsImage.h; sourceTree = "<group>"; };
+		185C2FD61CB4EE4D00D57825 /* YFNewsImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFNewsImage.m; sourceTree = "<group>"; };
+		185C2FD81CB5366200D57825 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		185C2FDB1CB536C800D57825 /* YFHomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFHomeController.h; sourceTree = "<group>"; };
+		185C2FDC1CB536C800D57825 /* YFHomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFHomeController.m; sourceTree = "<group>"; };
+		185C2FDE1CB5395500D57825 /* topic_news.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = topic_news.json; sourceTree = "<group>"; };
+		185C2FE01CB5398900D57825 /* YFChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFChannel.h; sourceTree = "<group>"; };
+		185C2FE11CB5398900D57825 /* YFChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFChannel.m; sourceTree = "<group>"; };
+		185C2FE31CB5410600D57825 /* YFChannelLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFChannelLabel.h; sourceTree = "<group>"; };
+		185C2FE41CB5410600D57825 /* YFChannelLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFChannelLabel.m; sourceTree = "<group>"; };
+		185C2FE71CB547E100D57825 /* YFChannelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFChannelCell.m; sourceTree = "<group>"; };
+		185C2FE91CB5489E00D57825 /* YFChannelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFChannelCell.h; sourceTree = "<group>"; };
+		185C2FEA1CB6184100D57825 /* YFDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFDetailController.h; sourceTree = "<group>"; };
+		185C2FEB1CB6184100D57825 /* YFDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFDetailController.m; sourceTree = "<group>"; };
+		185C2FED1CB62BE000D57825 /* detail.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = detail.html; sourceTree = "<group>"; };
 		18DA07E11CB38CF20056528E /* YF01-网易新闻.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YF01-网易新闻.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18DA07E51CB38CF20056528E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		18DA07E71CB38CF20056528E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -76,6 +109,8 @@
 		185434261CB3D8E900DE0D50 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				185C2FDB1CB536C800D57825 /* YFHomeController.h */,
+				185C2FDC1CB536C800D57825 /* YFHomeController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -83,6 +118,8 @@
 		185434271CB3D8E900DE0D50 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				185C2FE01CB5398900D57825 /* YFChannel.h */,
+				185C2FE11CB5398900D57825 /* YFChannel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -90,6 +127,11 @@
 		185434281CB3D8E900DE0D50 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				185C2FD81CB5366200D57825 /* Home.storyboard */,
+				185C2FE31CB5410600D57825 /* YFChannelLabel.h */,
+				185C2FE41CB5410600D57825 /* YFChannelLabel.m */,
+				185C2FE91CB5489E00D57825 /* YFChannelCell.h */,
+				185C2FE71CB547E100D57825 /* YFChannelCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -109,6 +151,10 @@
 			children = (
 				185434301CB3DB0200DE0D50 /* YFHeaderLineController.h */,
 				185434311CB3DB0200DE0D50 /* YFHeaderLineController.m */,
+				185C2FCC1CB40A3C00D57825 /* YFNewsController.h */,
+				185C2FCD1CB40A3C00D57825 /* YFNewsController.m */,
+				185C2FEA1CB6184100D57825 /* YFDetailController.h */,
+				185C2FEB1CB6184100D57825 /* YFDetailController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -118,6 +164,10 @@
 			children = (
 				185434361CB3DB4300DE0D50 /* YFHeaderLine.h */,
 				185434371CB3DB4300DE0D50 /* YFHeaderLine.m */,
+				185C2FD21CB40A9300D57825 /* YFNews.h */,
+				185C2FD31CB40A9300D57825 /* YFNews.m */,
+				185C2FD51CB4EE4D00D57825 /* YFNewsImage.h */,
+				185C2FD61CB4EE4D00D57825 /* YFNewsImage.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -128,6 +178,8 @@
 				1854342E1CB3D91000DE0D50 /* News.storyboard */,
 				185434331CB3DB2500DE0D50 /* YFHeaderLineCell.h */,
 				185434341CB3DB2500DE0D50 /* YFHeaderLineCell.m */,
+				185C2FCF1CB40A4E00D57825 /* YFNewsCell.h */,
+				185C2FD01CB40A4E00D57825 /* YFNewsCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -201,6 +253,8 @@
 		18DA07E41CB38CF20056528E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				185C2FED1CB62BE000D57825 /* detail.html */,
+				185C2FDE1CB5395500D57825 /* topic_news.json */,
 				18DA07E51CB38CF20056528E /* main.m */,
 			);
 			name = "Supporting Files";
@@ -287,6 +341,9 @@
 				18DA07F41CB38CF20056528E /* LaunchScreen.storyboard in Resources */,
 				1854342F1CB3D91000DE0D50 /* News.storyboard in Resources */,
 				18DA07F11CB38CF20056528E /* Assets.xcassets in Resources */,
+				185C2FEE1CB62BE000D57825 /* detail.html in Resources */,
+				185C2FDF1CB5395500D57825 /* topic_news.json in Resources */,
+				185C2FD91CB5366200D57825 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,13 +402,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				185C2FD11CB40A4E00D57825 /* YFNewsCell.m in Sources */,
 				18DA07E91CB38CF20056528E /* AppDelegate.m in Sources */,
+				185C2FD71CB4EE4D00D57825 /* YFNewsImage.m in Sources */,
+				185C2FE51CB5410600D57825 /* YFChannelLabel.m in Sources */,
+				185C2FE81CB547E100D57825 /* YFChannelCell.m in Sources */,
 				185434351CB3DB2500DE0D50 /* YFHeaderLineCell.m in Sources */,
+				185C2FD41CB40A9300D57825 /* YFNews.m in Sources */,
+				185C2FE21CB5398900D57825 /* YFChannel.m in Sources */,
 				185C2FC41CB3E18B00D57825 /* NSObject+Log.m in Sources */,
+				185C2FEC1CB6184100D57825 /* YFDetailController.m in Sources */,
 				185434381CB3DB4300DE0D50 /* YFHeaderLine.m in Sources */,
 				18DA07E61CB38CF20056528E /* main.m in Sources */,
 				185C2FC81CB3E1DA00D57825 /* UIView+YFExt.m in Sources */,
+				185C2FDD1CB536C800D57825 /* YFHomeController.m in Sources */,
 				185C2FCB1CB3E66D00D57825 /* YFAPIManager.m in Sources */,
+				185C2FCE1CB40A3C00D57825 /* YFNewsController.m in Sources */,
 				185434321CB3DB0200DE0D50 /* YFHeaderLineController.m in Sources */,
 				185C2FC01CB3E14B00D57825 /* YFHTTPSessionManager.m in Sources */,
 			);
