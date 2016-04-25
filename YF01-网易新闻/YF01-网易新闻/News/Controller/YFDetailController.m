@@ -15,6 +15,7 @@
 @property (nonatomic, copy) NSString *body;
 @property (nonatomic, copy) NSString *newsTitle;
 @property (nonatomic, copy) NSString *time;
+
 @end
 
 @implementation YFDetailController

@@ -19,7 +19,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9bv-LO-oNf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1054" y="-157"/>
+            <point key="canvasLocation" x="-977" y="-183"/>
         </scene>
         <!--网易新闻-->
         <scene sceneID="63y-I5-QZk">
@@ -84,7 +84,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zpy-0Q-cW7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-615" y="-174"/>
+            <point key="canvasLocation" x="-577" y="-183"/>
         </scene>
     </scenes>
 </document>

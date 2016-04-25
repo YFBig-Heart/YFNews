@@ -22,8 +22,10 @@
             // 取出新闻数据
             NSArray *data = responseObject[key];
         
+           // NSLog(@"%@",data);
             // 把数据转成模型数组
             NSArray *news = [NSArray yy_modelArrayWithClass:self json:data];
+           // NSLog(@"%@",news);
             // 回调
             completion(news);
         }else {
@@ -42,7 +44,7 @@
     return @{@"imgextra" : [YFNewsImage class],};
              
 }
-// 将将在新闻详情的url 拼其来 -- 重写set或get方法都可以
+// 将在新闻详情的url 拼其来 -- 重写set或get方法都可以
 - (void)setDocid:(NSString *)docid {
     _docid = docid;
     self.detailURL = [NSString stringWithFormat:@"article/%@/full.html",_docid];

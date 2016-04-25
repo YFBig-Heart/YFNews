@@ -31,5 +31,6 @@
  *  @param comletionHandle 完成回调
  */
 - (void)POST:(NSString *)path parameters:(id)parameters comletionHandle:(void(^)(id responseObject, NSError *error))comletionHandle;
+
 @end
 

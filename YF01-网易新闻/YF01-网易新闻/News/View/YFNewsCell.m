@@ -41,6 +41,7 @@
         self.replyCountLabel.text = @"0人跟贴";
     }
 
+   
     // imgextra有值说明是有更多图片
     if (_news.imgextra) {
         

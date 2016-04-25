@@ -94,6 +94,7 @@
     YFDetailController *detail = [[YFDetailController alloc] init];
      // 设置详情页的URL
     detail.detailURL = news.detailURL;
+   
     
     // 跳转
     [self.navigationController pushViewController:detail animated:YES];
